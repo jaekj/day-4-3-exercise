@@ -9,16 +9,13 @@ position = input("Where do you want to put the treasure? ")
 
 #Write your code below this row 👇
 
-ps = int(position)
-col = int(ps / 10)
-ro = ps % 10
+position_int = int(position) # convert string to int
+column = int(position_int / 10) 
+row = position_int % 10
 
 
-newmap = map[ro - 1]
-newmap[col - 1] = "X"
-
-
-
+newmap = map[row - 1]
+newmap[column - 1] = "X"
 
 #Write your code above this row 👆
 
